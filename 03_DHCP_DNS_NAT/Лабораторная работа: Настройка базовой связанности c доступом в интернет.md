@@ -119,6 +119,16 @@
 |```access-list 13 permit 10.10.2.0 0.0.0.255```|
 |```access-list 13 permit 10.10.3.0 0.0.0.255```|
 |```ip nat inside source list 13 interface gi0/1```|
+|```interface gi0/2.10```|
+|``ip nat inside```|
+|```interface gi0/2.20```|
+|```ip nat inside```|
+|```interface gi0/2.30```|
+|```ip nat inside```|
+|```interface gi0/2```|
+|```ip nat inside```|
+|```interface gi0/1```|
+|```ip nat outside```|
 |```do copy running-config startup-config```|
 
 ### Настройка DHCP для Department_1 и Department_2
