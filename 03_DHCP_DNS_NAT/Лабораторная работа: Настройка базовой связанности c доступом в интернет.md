@@ -156,5 +156,8 @@
 | --- | --- |
 |![Screenshot 2021-10-13 230015](https://user-images.githubusercontent.com/66735783/137204672-1d98c8b2-b7ea-42e8-b5e8-eb2f53d99e7c.png)|![Screenshot 2021-10-13 230045](https://user-images.githubusercontent.com/66735783/137204693-0d3f21fc-f0dc-4034-8153-fa85dd2d12d2.png)|
 
-
+### Файлы конфигурации
+[SW2.txt](https://github.com/wadepac/juniors/files/7325414/R-O2.txt)
+[SW1.txt](https://github.com/wadepac/juniors/files/7325420/R-O1.txt)
+[R1.txt](https://github.com/wadepac/juniors/files/7325422/R-1.txt)
 
