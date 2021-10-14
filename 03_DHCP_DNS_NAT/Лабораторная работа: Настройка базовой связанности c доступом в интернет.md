@@ -51,14 +51,16 @@
 |```do copy running-config startup-config```|```do copy running-config startup-config```|
 
 ### Настройка trunk
-|R1|
-| --- |
-|```enable``` |
-| ```conf t```|
-|```interface gi0/2```|
-|```no shutdown```|
-|```switchport mode trunk```|
-```do copy running-config startup-config```|
+R1
+```
+enable
+conf t
+interface gi0/2
+no shutdown
+switchport mode trunk
+do copy running-config startup-config
+```
+
 
 ### Настройка access
 |R-O2|R-O1|
