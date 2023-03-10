@@ -212,5 +212,6 @@
 
 
 Топология
+
 <img width="338" alt="Снимок экрана 2023-03-10 в 15 44 50" src="https://user-images.githubusercontent.com/66735783/224319470-d5da68e1-0dad-497b-9df4-1f5d0b09a2a6.png">
 
