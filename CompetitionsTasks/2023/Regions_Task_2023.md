@@ -101,6 +101,7 @@
 
 Топология
 
+<img width="476" alt="Снимок экрана 2023-03-10 в 15 44 06" src="https://user-images.githubusercontent.com/66735783/224319254-b75195be-4f46-4093-ab06-68ef59efa2ae.png">
 
 
 ### Модуль Б.  (Развертывание и сопровождение сетевой инфраструктуры)
@@ -211,3 +212,5 @@
 
 
 Топология
+<img width="338" alt="Снимок экрана 2023-03-10 в 15 44 50" src="https://user-images.githubusercontent.com/66735783/224319470-d5da68e1-0dad-497b-9df4-1f5d0b09a2a6.png">
+
