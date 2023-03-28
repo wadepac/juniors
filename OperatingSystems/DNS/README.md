@@ -1,7 +1,41 @@
 ## DNS или Служба доменных имен
 
+### Порядок источников для разрешения имён (приоритет файла hosts и DNS)
 
-### dnsmasq
+Файл /etc/nsswitch.conf (Name Service Switch configuration file) - это конфигурационный файл переключения служб имён. Он устанавливает настройки службы преобразования имён хостов и доменных имён, а так же многие другие, но сейчас не об этом.
+
+Нам необходимо изменить приоритет файла hosts и службы DNS
+Для этого в файле /etc/nsswitch.conf ищем строку:
+```
+hosts:          files dns
+```
+И меняем местами files и dns, чтобы получить:
+```
+hosts:          dns files
+```
+
+### Настройка клиентов для использования dns
+1. Обновим пакеты и ОС
+
+```
+sudo apt-get -y update
+
+sudo apt-get -y upgrade
+```
+
+2. Установим resolvconf, net-tools
+
+```
+apt-get -y install resolvconf net-tools
+```
+
+3. Перезагрузим сетевые сервисы
+```
+sudo service networking restart
+```
+
+
+### Настройка сервер DNSна базе dnsmasq
 1. Обновим пакеты и ОС
 
 ```
