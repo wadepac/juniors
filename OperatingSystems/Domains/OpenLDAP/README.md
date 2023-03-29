@@ -24,6 +24,12 @@ apt-get -y install slapd ldap-utils
 ```
 dpkg-reconfigure slapd
 ```
+<img width="778" alt="dpkg ldap 1" src="https://user-images.githubusercontent.com/66735783/228458864-d2d26fe5-285e-476f-81c3-ed3c927a24d1.png">
+<img width="785" alt="dpkg ldap 2" src="https://user-images.githubusercontent.com/66735783/228458879-8413e9d8-3851-428e-8494-bed948fbdb1c.png">
+<img width="775" alt="dpkg ldap 3" src="https://user-images.githubusercontent.com/66735783/228458893-e8905886-20a0-47da-9630-9b567fa499d9.png">
+<img width="723" alt="dpkg ldap 4" src="https://user-images.githubusercontent.com/66735783/228458905-ffd4e8a1-ed03-4765-b3ad-dafc58083786.png">
+<img width="622" alt="dpkg ldap 5" src="https://user-images.githubusercontent.com/66735783/228459000-65669890-64d6-454e-8896-6a36b7c0ea22.png">
+<img width="798" alt="dpkg ldap 6" src="https://user-images.githubusercontent.com/66735783/228459014-eb669920-34b4-4529-9609-26ac8c436a60.png">
 
 5. Проверяем конфигурацию
 
