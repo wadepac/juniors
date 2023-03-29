@@ -188,7 +188,7 @@ memberuid: manager1
 ldapmodify -x -W -D "cn=admin,dc=msk,dc=skills" -f /etc/ldap/add_members.ldif
 ```
 
-## Вариант 2
+
 
 #### Добавление клиентов в домен LDAP и настройка PAM
 
@@ -209,7 +209,7 @@ ping -c3 compX-srv2.msk.skills
 ```
 4. Установите наобходимые пакеты
 ```
-sudo apt install lbnss-ldapd libpam-ldapd ldap-utils
+sudo apt install libnss-ldapd libpam-ldapd ldap-utils
 ```
 5. Во время установки завершите вход в домен
 6. Настройте PAM аутентификацию
