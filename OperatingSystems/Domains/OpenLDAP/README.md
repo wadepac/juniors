@@ -172,12 +172,12 @@ changetype: modify
 add: memberuid
 memberuid: competitor1
 
-dn: cn=experts,ou=competitors,dc=msk,dc=skills
+dn: cn=experts,ou=experts,dc=msk,dc=skills
 changetype: modify
 add: memberuid
 memberuid: expert1
 
-dn: cn=managers,ou=competitors,dc=msk,dc=skills
+dn: cn=managers,ou=managers,dc=msk,dc=skills
 changetype: modify
 add: memberuid
 memberuid: manager1
