@@ -14,7 +14,7 @@ sudo apt-get -y upgrade
 2. Установим OpenLDAP server и LDAP утилиты
 
 ```
-apt-get -y install slapd LDAP -utils
+apt-get -y install slapd ldap-utils
 ```
 
 3. В ходе установки нужно будет задать пароль администратора LDAP сервера, имя домена, указать, какой тип базы и какую версию LDAP протокола использовать.
@@ -38,6 +38,7 @@ sudo systemctl restart slapd
 sudo systemctl status slapd
 ```
 
+### Вариант 1
 
 #### Создание OrganizationalUnits, Групп и Пользователей LDAP Server
 
@@ -178,6 +179,7 @@ memberuid: manager1
 ldapmodify -x -W -D "cn=admin,dc=msk,dc=skills" -f /etc/ldap/add_members.ldif
 ```
 
+## Вариант 2
 
 #### Добавление клиентов в домен LDAP и настройка PAM
 
