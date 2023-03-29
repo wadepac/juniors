@@ -28,14 +28,14 @@ sudo apt-get -y upgrade
 ```
 apt-get -y install resolvconf net-tools
 ```
-
-3. Перезагрузим сетевые сервисы
+3. Устаналвиваем ip-address DN-сервера в настройках адаптера
+4. Перезагрузим сетевые сервисы
 ```
 sudo service networking restart
 ```
 
 
-### Настройка сервер DNSна базе dnsmasq
+### Настройка сервер DNS на базе dnsmasq
 1. Обновим пакеты и ОС
 
 ```
@@ -85,4 +85,41 @@ nslookup compX-srv3.msk.skills
 dig compX-srv3.msk.skills 
 ```
 
-### BIND9
+### Настройка сервер DNS на базе BIND9
+
+1. Обновим пакеты и ОС
+
+```
+sudo apt-get -y update
+
+sudo apt-get -y upgrade
+```
+
+2. Установим bind9, resolvconf, net-tools
+
+```
+apt-get -y install bind9 resolvconf net-tools
+```
+
+3. Изменим основные настройки  в файле /etc/bind/named.conf.options
+
+```
+forwarders { 8.8.8.8 ;};
+allow-query {any;};
+
+dnssec-validation no;
+```
+
+4. Добавим описание файлов зон в файл /etc/bind/named.conf.options
+```
+```
+5. Создадим файл зоны msk.skills.zone
+```
+```
+6. Отредактируем файл /etc/default/named, чтобы он слушал только ipv4
+```
+```
+7. Перезагрузим сервис bind9
+```
+service bind9 restart
+```
