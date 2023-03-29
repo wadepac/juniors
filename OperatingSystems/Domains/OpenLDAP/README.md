@@ -212,11 +212,17 @@ ping -c3 compX-srv2.msk.skills
 sudo apt install libnss-ldapd libpam-ldapd ldap-utils
 ```
 5. Во время установки завершите вход в домен
+<img width="798" alt="ldap-cli 1" src="https://user-images.githubusercontent.com/66735783/228467504-f89a4d68-6e30-467e-b127-8507cc18219d.png">
+<img width="812" alt="ldap-cli 2" src="https://user-images.githubusercontent.com/66735783/228467523-c7db748d-acdb-48fb-8745-5ff6e98914b1.png">
+<img width="770" alt="ldap-cli 2" src="https://user-images.githubusercontent.com/66735783/228467583-736d3db1-74b4-40c9-b348-230e345f32a5.png">
+
 6. Настройте PAM аутентификацию
 ```
 sudo pam-auth-update
 ```
 7. Активируйте профиль Create a home directory on login
+<img width="787" alt="ldap-cli-pam 1" src="https://user-images.githubusercontent.com/66735783/228467745-1243d7a1-627e-4511-9c2c-fe364422b067.png">
+
 8. перезагрузите машину и проверьте вход доменным пользователем
 
 
