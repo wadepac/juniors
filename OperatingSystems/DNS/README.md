@@ -110,14 +110,49 @@ allow-query {any;};
 dnssec-validation no;
 ```
 
-4. Добавим описание файлов зон в файл /etc/bind/named.conf.options
+4. Добавим описание файлов зон в файл /etc/bind/named.conf.local
 ```
+zone "msk.skills" {
+        type master;
+        file "/etc/bind/msk.skills.zone";
+};
+
+zone "ya.ru" {
+        type forward;
+        forward only;
+        forwarders { 77.88.8.8;};
+};
 ```
+
 5. Создадим файл зоны msk.skills.zone
 ```
+$TTL	604800
+@	IN	SOA	msk.skills. root.msk.skills. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	comp3-srv1.
+	IN	A	192.168.3.1
+	MX	0	@	
+logs	IN	CNAME	@
+
+comp3-srv2	IN	A	192.168.3.2
+comp3-srv3	IN	A	192.168.3.3
+split		IN	A	2.2.2.2
+split		IN	A	3.3.3.3
+
+web		IN	CNAME	comp3-srv3.msk.skills.
 ```
 6. Отредактируем файл /etc/default/named, чтобы он слушал только ipv4
 ```
+# run resolvconf?
+RESOLVCONF=no
+
+# startup options for the server
+OPTIONS="-u bind -4"
 ```
 7. Перезагрузим сервис bind9
 ```
