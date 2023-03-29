@@ -86,14 +86,17 @@ sudo ldapsearch -x -b "dc=msk,dc=skills" ou
 dn: cn=competitors,ou=competitors,dc=msk,dc=skills
 objectClass: top
 objectClass: posixGroup
+gidNumber: 10010
 
 dn: cn=experts,ou=experts,dc=msk,dc=skills
 objectClass: top
 objectClass: posixGroup
+gidNumber: 10011
 
 dn: cn=managers,ou=managers,dc=msk,dc=skills
 objectClass: top
 objectClass: posixGroup
+gidNumber: 10012
 ```
 2. С помощью команды ldapadd добавьте группы
 
