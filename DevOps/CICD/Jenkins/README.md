@@ -65,10 +65,19 @@ sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 ```
 
-### Установка плагинов для мониторинга 
+### Установка плагинов и дополнений
+
+#### Установка плагинов для мониторинга с помощью Prometheus и Grafana
 
 1. Переходим в Настроить Jenkins > Plugins > Available Plugins
 2. В поиске набираем Prometheus и устанавливаем соотвествующий плагин
 3. Выбираем пункт Download now and restart after install
 4. Проверяем дсотупность endpoint по адресу ip-jenkins:8080/prometheus
 5. При успешном завершении мы должны получить примерно следующий вывод:
+
+### Авторизация и аутентификация
+
+#### Интеграция с Active Directory
+1. Переходим в Настроить Jenkins > Plugins > Available Plugins
+2. В поиске набираем Active Directory и устанавливаем соотвествующий плагин
+3. Выбираем пункт Download now and restart after install
