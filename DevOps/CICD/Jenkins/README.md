@@ -50,4 +50,15 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 11. При завершении установки без ошибок мы увидим следующее окно:
 <img width="968" alt="install-jenkins-web-5" src="https://user-images.githubusercontent.com/66735783/229452924-171cdb4c-ae8a-4c1c-ad30-7f7560a38294.png">
 
-#### Установка Docker
+#### Установка и добавление Docker
+
+1. Установим Docker  в соответствии с инструкцией
+
+2. Добавим пользователя jenkins в локальную группу docker:
+```
+sudo usermod -aG docker jenkins
+```
+3. Перезапустим сервис Jenkins:
+```
+sudo systemctl restart jenkins
+```
