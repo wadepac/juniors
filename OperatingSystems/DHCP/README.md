@@ -56,3 +56,15 @@ INTERFACESv4="<your interface>"
 ```
 systemctl enable isc-dhcp-server --now
 ```
+
+### Установка и настройка dhcp-relay в Debian/Ubuntu
+1. Установка пакетов
+```
+sudo apt update
+sudo apt install isc-dhcp-relay
+```
+2. Добавляем изменения в файл /etc/default/isc-dhcp-relay
+```
+SERVERS="<адрес dhcp-сервера>"
+INTERFACES="<интерфейс на котором примаются запросы от клиентов и интерфейс с которого отправляются запросы серверу>"
+```
