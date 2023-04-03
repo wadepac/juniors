@@ -1,6 +1,6 @@
 ## Jenkins
 
-#### Установка Jenkins
+#### Установка и настройка Jenkins
 
 1. Добавим необходимые ключи и репозитории:
 ```
@@ -49,3 +49,5 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 11. При завершении установки без ошибок мы увидим следующее окно:
 <img width="968" alt="install-jenkins-web-5" src="https://user-images.githubusercontent.com/66735783/229452924-171cdb4c-ae8a-4c1c-ad30-7f7560a38294.png">
+
+#### Установка Docker
