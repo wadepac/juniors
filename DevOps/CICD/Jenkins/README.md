@@ -40,3 +40,8 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 8. Запустится установка
 <img width="955" alt="install-jenkins-web-3" src="https://user-images.githubusercontent.com/66735783/229451304-3c738279-ebdc-40b9-a6bd-a41e84010f46.png">
+
+9. По окончанию установки необходимо создать первого пользователя с админскими правами. Создадим пользователя jenkadm с паролем Je9k19s и адресом почты jenkadm@test.local:
+
+
+10. Для завершения установки укажем url доступа:
