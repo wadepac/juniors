@@ -45,4 +45,6 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 <img width="920" alt="install-jenkins-web-4" src="https://user-images.githubusercontent.com/66735783/229452347-fdeb5b50-eca7-4760-bc94-b952913a8fc0.png">
 
 10. Для завершения установки укажем url доступа в формате https://ip-jenkins:8080 :
-11. <img width="974" alt="install-jenkins-web-4" src="https://user-images.githubusercontent.com/66735783/229452417-5c9770d4-d4e9-4e7b-9443-a0eb36799c5d.png">
+<img width="974" alt="install-jenkins-web-4" src="https://user-images.githubusercontent.com/66735783/229452417-5c9770d4-d4e9-4e7b-9443-a0eb36799c5d.png">
+
+11. При завершении установки без ошибок мы увидим следующее окно:
