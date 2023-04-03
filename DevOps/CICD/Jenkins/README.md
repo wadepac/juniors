@@ -1,5 +1,7 @@
 ## Jenkins
 
+### Установка и базовая конфигурация Jenkins и агентов
+
 #### Установка и настройка Jenkins
 
 1. Добавим необходимые ключи и репозитории:
@@ -62,3 +64,10 @@ sudo usermod -aG docker jenkins
 ```
 sudo systemctl restart jenkins
 ```
+
+### Установка плагинов для мониторинга 
+
+1. Переходим в Настроить Jenkins > Plugins > Available Plugins
+2. В поиске набираем Prometheus и устанавливаем соотвествующий плагин
+3. Выбираем пункт Download now and restart after install
+4. Проверяем дсотупность endpoint по адресу ip-jenkins:8080/prometheus
