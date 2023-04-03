@@ -71,3 +71,4 @@ sudo systemctl restart jenkins
 2. В поиске набираем Prometheus и устанавливаем соотвествующий плагин
 3. Выбираем пункт Download now and restart after install
 4. Проверяем дсотупность endpoint по адресу ip-jenkins:8080/prometheus
+5. При успешном завершении мы должны получить примерно следующий вывод:
