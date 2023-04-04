@@ -11,14 +11,14 @@ sudo apt install dnsmasq
 ```
 2. Добавим настройки dhcp-server в файл конфигурации /etc/dnsmasq.conf
 ```
-interface= <your interface>
-dhcp-range= <your-range>, 12h
+interface=<your interface>
+dhcp-range=<your,range>, 12h
 
 dhcp-option=1,255.255.255.0 # маска
-dhcp-option=3, <your gateway> # шлюз по умолчанию
-dhcp-option=42, <your ntp server> # указываем сервер времени
-dhcp-option=6, <your DNS server> # указываем  DNS сервер
-dhcp-option=15, <имя домена> # указываем имя домена
+dhcp-option=3,<your gateway> # шлюз по умолчанию
+dhcp-option=42,<your ntp server> # указываем сервер времени
+dhcp-option=6,<your DNS server> # указываем  DNS сервер
+dhcp-option=15,<имя домена> # указываем имя домена
 ```
 3. Перезапускаем сервер и добавляем в автозагрузку
 ```
