@@ -17,8 +17,8 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 2. Установим пакеты:
 ```
 sudo apt-get update
-sudo apt-get install fontconfig openjdk-11-jre
-sudo apt-get install jenkins
+sudo apt-get install -y fontconfig openjdk-11-jre
+sudo apt-get install -y jenkins
 ```
 
 3. Запустим сервис и проверим статус
