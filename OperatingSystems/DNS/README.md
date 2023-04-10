@@ -158,3 +158,11 @@ OPTIONS="-u bind -4"
 ```
 service bind9 restart
 ```
+
+
+#### DNS OPNsense
+вариант 1 - dnsmasq
+[официальная документация](https://docs.opnsense.org/manual/dnsmasq.html)
+
+вариант 2 - bind
+[официальная документация](https://docs.opnsense.org/manual/how-tos/bind.html)
