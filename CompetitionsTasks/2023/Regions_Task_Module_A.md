@@ -88,18 +88,18 @@
 |           | VPNClient (EKB) | 100.70.6.13/29   | ISP – первый адрес в сети |
 |           | DNS-сервер      | 100.100.100.100  |                           |
 |           | NTP-сервер      | 100.101.102.103  |                           |
-| FW–R0–MSK | FW-MSK          | STATIC           |                           |
-|           | R0-MSK          | STATIC           | FW-MSK (OSPF)             |
-| LAN–MSK   | R0–MSK          | STATIC           |                           |
-|           | PC–MSK          | DHCP             | R0–MSK                    |
-| SRV–MSK   | R0–MSK          | STATIC           |                           |
-|           | SRV1–MSK        | STATIC           | R0–MSK                    |
-|           | SRV2–MSK        | STATIC           | R0–MSK                    |
-| DMZ–MSK   | FW–MSK          | STATIC           |                           |
-|           | APP–MSK         | STATIC           | FW–MSK                    |
-| LAN–AMS   | FW–AMS          | STATIC           |                           |
-|           | PC–AMS          | DHCP             | FW–AMS                    |
-| DMZ–AMS   | FW–AMS          | STATIC           |                           |
-|           | DMZ–AMS         | STATIC           | FW–AMS                    |
-|           | APP–AMS         | STATIC           | FW–AMS                    |
+| FW–R0–MSK | FW-MSK          | 192.168.1.1/30   |                           |
+|           | R0-MSK          | 192.168.1.2/30   | 192.168.1.1               |
+| LAN–MSK   | R0–MSK          | 192.168.2.1/24   |                           |
+|           | PC–MSK          | DHCP             | 192.168.2.1               |
+| SRV–MSK   | R0–MSK          | 192.168.3.1/24   |                           |
+|           | SRV1–MSK        | 192.168.3.2/24   | 192.168.3.1               |
+|           | SRV2–MSK        | 192.168.3.3/24   | 192.168.3.1               |
+| DMZ–MSK   | FW–MSK          | 192.168.4.1/30   |                           |
+|           | APP–MSK         | 192.168.4.2/30   | 192.168.4.1               |
+| LAN–AMS   | FW–AMS          | 172.16.1.1/24    |                           |
+|           | PC–AMS          | DHCP             | 172.16.1.1                |
+| DMZ–AMS   | FW–AMS          | 172.16.2.1/24    |                           |
+|           | DMZ–AMS         | 172.16.2.2/24    | 172.16.2.1                |
+|           | APP–AMS         | 172.16.2.3/24    | 172.16.2.1                |
 
